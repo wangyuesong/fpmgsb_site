@@ -4,9 +4,7 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-body {
-    margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-}
+
 .nav-bar-color{
   background: #18525f;
   font-family: proxima-nova,sans-serif;
@@ -181,4 +179,57 @@ footer {
         margin-bottom: 10px;
         margin-left: 0;
     }
+}
+
+/*Personalize*/
+
+/*Fixed top style*/
+.nvabar-fixed-top .navbar-toggle{
+  color: white;
+  border-color: white;
+}
+.navbar-fixed-top .navbar-toggle:hover,
+.navbar-fixed-top .navbar-toggle:focus{
+  color: white;
+  border-color: white;
+}
+
+.navbar-fixed-top .navbar-toggle .icon-bar{
+  color: white;
+  border-color: white;
+  background-color: white;
+}
+
+/*Not fixed top style*/
+.navbar-static-top{
+  top:150px;
+}
+.navbar-static-top .navbar-toggle{
+  color: white;
+  border-color: white;
+}
+.navbar-static-top .navbar-toggle:hover,
+.navbar-static-top .navbar-toggle:focus{
+  color: white;
+  border-color: white;
+}
+
+.navbar-static-top .navbar-toggle .icon-bar{
+  color: white;
+  border-color: white;
+  background-color: white;
+}
+
+.navbar-static-top .navbar-nav li a{
+  color: white;
+  font-size: 20px;
+  line-height: 30px;
+  margin-left: 40px;
+}
+
+.navbar-static-top .navbar-nav li a{
+  color: white;
+  font-size: 20px;
+  line-height: 30px;
+  margin-left: 40px;
 }
