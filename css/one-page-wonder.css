@@ -5,13 +5,6 @@
  */
 
 
-.nav-bar-color{
-  background: #18525f;
-  font-family: proxima-nova,sans-serif;
-  font-weight: 400;
-  color: red;
-  text-transform: uppercase;
-}
 .header-image {
     display: block;
     width: 100%;
@@ -45,6 +38,10 @@
 
 .featurette {
     overflow: hidden;
+}
+
+.featurette .lead{
+  font-family: proxima-nova-condensed,sans-serif;
 }
 
 .featurette-image.pull-left {
@@ -183,8 +180,7 @@ footer {
 
 /*Personalize*/
 
-/*Fixed top style*/
-.nvabar-fixed-top .navbar-toggle{
+/*.nvabar-fixed-top .navbar-toggle{
   color: white;
   border-color: white;
 }
@@ -200,7 +196,7 @@ footer {
   background-color: white;
 }
 
-/*Not fixed top style*/
+
 .navbar-static-top{
   top:150px;
 }
@@ -232,4 +228,93 @@ footer {
   font-size: 20px;
   line-height: 30px;
   margin-left: 40px;
+}*/
+
+
+#navbar-fpmg.navbar{
+  margin-bottom: 0;
+}
+#navbar-fpmg.navbar-default .navbar-brand {
+    color: rgba(245, 245, 245, 1);
+    font-weight: 100;
+    font-style: italic;
+}
+#navbar-fpmg.navbar-default {
+    font-size: 18px;
+    background-color: rgba(24, 82, 95, 1);
+    border-width: 0px;
+    border-radius: 0px;
+}
+#navbar-fpmg.navbar-default .navbar-nav>li>a {
+    font-family: proxima-nova-condensed,sans-serif;
+    margin-right: 40px;
+    color: rgba(250, 245, 245, 1);
+    background-color: rgba(248, 248, 248, 0);
+}
+#navbar-fpmg.navbar-default .navbar-nav>li>a:hover,
+#navbar-fpmg.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(252, 247, 247, 1);
+    background-color: rgba(0, 67, 83, 1);
+}
+#navbar-fpmg.navbar-default .navbar-nav>.active>a,
+#navbar-fpmg.navbar-default .navbar-nav>.active>a:hover,
+#navbar-fpmg.navbar-default .navbar-nav>.active>a:focus {
+
+    color: rgba(247, 239, 239, 1);
+    background-color: rgba(0, 67, 83, 1);
+}
+#navbar-fpmg.navbar-default .navbar-toggle {
+    border-color: #004353;
+}
+#navbar-fpmg.navbar-default .navbar-toggle:hover,
+#navbar-fpmg.navbar-default .navbar-toggle:focus {
+    background-color: #004353;
+}
+#navbar-fpmg.navbar-default .navbar-toggle .icon-bar {
+    background-color: #004353;
+}
+#navbar-fpmg.navbar-default .navbar-toggle:hover .icon-bar,
+#navbar-fpmg.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #18525f;
+}
+
+
+/*Search */
+
+#custom-search-input{
+    margin-top:20px;
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 16px;
+    background-color: #fff;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
+
+.fpmg-container{
+  padding-left: 30px;
+  padding-right: 30px;
 }
