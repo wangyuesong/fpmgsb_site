@@ -318,3 +318,7 @@ footer {
   padding-left: 30px;
   padding-right: 30px;
 }
+
+.fpmg-container #owl-example img{
+  width: 100%;
+}
