@@ -322,3 +322,80 @@ footer {
 .fpmg-container #owl-example img{
   width: 100%;
 }
+
+.p{
+  color:#555;
+}
+
+#physician .top-description{
+  margin-top: 20px;
+}
+
+#physician .top-description .lead{
+  margin-top: 30px;
+  display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+.social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+ .social {
+     -webkit-transform: scale(0.8);
+     /* Browser Variations: */
+
+     -moz-transform: scale(0.8);
+     -o-transform: scale(0.8);
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s;
+ }
+
+/*
+    Multicoloured Hover Variations
+*/
+
+ #social-fb:hover {
+     color: #3B5998;
+ }
+ #social-tw:hover {
+     color: #4099FF;
+ }
+ #social-gp:hover {
+     color: #d34836;
+ }
+ #social-em:hover {
+     color: #f39c12;
+ }
+
+
+/*Location*/
+ .video-container {
+     position: relative;
+     padding-bottom: 56.25%;
+     padding-top: 35px;
+     height: 0;
+     overflow: hidden;
+ }
+
+ .video-container iframe {
+     position: absolute;
+     top:0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+ }
+
+ .img-wrapper img{
+   display: inline-block;
+   margin-right: 15px;
+   vertical-align: top;
+   border: 0;
+   -webkit-border-radius: 20%;
+   -moz-border-radius: 20%;
+   border-radius: 20%;
+ }
