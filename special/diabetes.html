@@ -12,12 +12,13 @@
   <title>One Page Wonder - Start Bootstrap Template</title>
 
   <!-- Bootstrap Core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom CSS -->
-  <link href="css/one-page-wonder.css" rel="stylesheet">
+  <link href="../css/one-page-wonder.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/name_card.css">
+  <link rel="stylesheet" href="../css/owl.carousel.css">
+  <link rel="stylesheet" href="../css/owl.theme.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,7 +38,7 @@
         </span>
       </div>
       <div class="col-md-2 col-sm-4 col-xs-12">
-        <img src="images/image2.JPG" class="center-block">
+        <img src="../images/image2.JPG" class="center-block">
       </div>
       <div class="col-md-8">
         <div class="row hidden-xs hidden-sm">
@@ -54,7 +55,7 @@
             </div>
           </div>
           <div class="col-md-2">
-            <a href="https://www.facebook.com/Fpmgsb"> <img src="images/like_us.png" style="max-height: 50px; margin-top:20px;"/></a>
+            <a href="https://www.facebook.com/Fpmgsb"> <img src="../images/like_us.png" style="max-height: 50px; margin-top:20px;" /></a>
           </div>
         </div>
       </div>
@@ -77,13 +78,13 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li>
-            <a href="index.html">HOME</a>
+          <li class="active">
+            <a href="#about">HOME</a>
           </li>
           <li>
             <a href="physicians.html">PHYSICIANS</a>
           </li>
-          <li class="active">
+          <li>
             <a href="location.html">LOCATION</a>
           </li>
           <li class="dropdown">
@@ -110,45 +111,45 @@
             </ul>
           </li>
           <li>
-            <a href="#hospital_medicine.html">HOSPITAL MEDICINE</a>
+            <a href="#contact">HOSPITAL MEDICINE</a>
           </li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
     </div>
   </nav>
-  <!-- Full Width Image Header -->
-  <!-- <header class="header-image">
-        <div class="headline">
-            <div class="container">
-                <h1>One Page Wonder</h1>
-                <h2>Will Knock Your Socks Off</h2>
-            </div>
-        </div>
-    </header> -->
-
   <!-- Page Content -->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 video-container card avatar">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3290.378506767826!2d-119.7531512843956!3d34.442538480501504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e9152f7e478777%3A0xcf43738219e0ae51!2sFamily+Practice+Medical+Group!5e0!3m2!1sen!2sus!4v1452759799451"
-        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
-      <div class="col-md-1">
-      </div>
-      <div class="col-md-5">
-        <h2 class="featurette-heading">Our
-            <span class="text-muted">Location</span>
-        </h2>
-        <p class="lead">
-          200 North La Cumbre Rd. Suite E Santa Barbara, Ca. 93110
-        </p>
-        <div class="img-wrapper">
-          <img src="images/location/photo.jpg" class="img-responsive">
-        </div>
-      </div>
-    </div>
+  <div class="fpmg-container">
+    <div class="row featurette">
+    		<div class="col-md-12">
+    			<div class="jumbotron" id="diabetes">
+    				<h2 class="featurette-heading">
+    				 Diabetes Management Matters
+    				</h2>
+    				<p class="lead">
+    				The main goal of diabetes management is to restore carbohydrate metabolism to as close to a normal state as possible. To achieve this goal, individuals with an absolute deficiency of insulin require insulin replacement therapy, which is given through injections or an insulin pump. Insulin resistance, in contrast, can be corrected by dietary modifications and exercise. Other goals of diabetes management are to prevent or treat the many complications that can result from the disease itself and from its treatment.	</p>
+    				<p>
+    					<a class="btn btn-primary btn-large" href="#">Learn more</a>
+    				</p>
+    			</div>
+    			<div class="row">
+    				<div class="col-md-5">
+    				</div>
+    				<div class="col-md-7">
+    				</div>
+    			</div>
+    			<div class="row">
+    				<div class="col-md-6">
+    				</div>
+    				<div class="col-md-6">
+    				</div>
+    			</div>
+    		</div>
+    	</div>
 
+
+
+    <hr class="featurette-divider">
 
     <!-- Footer -->
     <footer>
@@ -163,17 +164,33 @@
   <!-- /.container -->
 
   <!-- jQuery -->
-  <script src="js/jquery.js"></script>
+  <script src="../js/jquery.js"></script>
 
   <!-- Bootstrap Core JavaScript -->
-  <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/owl.carousel.js"></script>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 </body>
 
 </html>
 
 <script>
   $(function() {
+
+    $("#owl-example").owlCarousel({
+
+      slideSpeed: 300,
+      paginationSpeed: 400,
+      singleItem: true
+        // "singleItem:true" is a shortcut for:
+        // items : 1,
+        // itemsDesktop : false,
+        // itemsDesktopSmall : false,
+        // itemsTablet: false,
+        // itemsMobile : false
+
+    });
+
     $(window).scroll(function() {
       if ($(window).scrollTop() < 200) {
         $("#navbar-fpmg").toggleClass("navbar-fixed-top", false);

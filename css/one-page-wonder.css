@@ -178,59 +178,6 @@ footer {
     }
 }
 
-/*Personalize*/
-
-/*.nvabar-fixed-top .navbar-toggle{
-  color: white;
-  border-color: white;
-}
-.navbar-fixed-top .navbar-toggle:hover,
-.navbar-fixed-top .navbar-toggle:focus{
-  color: white;
-  border-color: white;
-}
-
-.navbar-fixed-top .navbar-toggle .icon-bar{
-  color: white;
-  border-color: white;
-  background-color: white;
-}
-
-
-.navbar-static-top{
-  top:150px;
-}
-.navbar-static-top .navbar-toggle{
-  color: white;
-  border-color: white;
-}
-.navbar-static-top .navbar-toggle:hover,
-.navbar-static-top .navbar-toggle:focus{
-  color: white;
-  border-color: white;
-}
-
-.navbar-static-top .navbar-toggle .icon-bar{
-  color: white;
-  border-color: white;
-  background-color: white;
-}
-
-.navbar-static-top .navbar-nav li a{
-  color: white;
-  font-size: 20px;
-  line-height: 30px;
-  margin-left: 40px;
-}
-
-.navbar-static-top .navbar-nav li a{
-  color: white;
-  font-size: 20px;
-  line-height: 30px;
-  margin-left: 40px;
-}*/
-
-
 #navbar-fpmg.navbar{
   margin-bottom: 0;
 }
@@ -259,10 +206,32 @@ footer {
 #navbar-fpmg.navbar-default .navbar-nav>.active>a,
 #navbar-fpmg.navbar-default .navbar-nav>.active>a:hover,
 #navbar-fpmg.navbar-default .navbar-nav>.active>a:focus {
-
     color: rgba(247, 239, 239, 1);
     background-color: rgba(0, 67, 83, 1);
 }
+
+
+/*Dropdowns*/
+#navbar-fpmg.navbar-default .navbar-nav>li>ul{
+    background-color: rgba(24, 82, 95, 1);
+}
+#navbar-fpmg.navbar-default .navbar-nav>li>ul>li>a {
+    font-size: 18px;
+    background-color: rgba(24, 82, 95, 1);
+    border-width: 0px;
+    border-radius: 0px;
+    font-family: proxima-nova-condensed,sans-serif;
+    color: rgba(250, 245, 245, 1);
+}
+
+#navbar-fpmg.navbar-default .navbar-nav>li>ul>li>a:hover,
+#navbar-fpmg.navbar-default .navbar-nav>li>ul>li>a:focus {
+    color: rgba(252, 247, 247, 1);
+    background-color: rgba(0, 67, 83, 1);
+}
+
+
+
 #navbar-fpmg.navbar-default .navbar-toggle {
     border-color: #004353;
 }
@@ -399,3 +368,45 @@ footer {
    -moz-border-radius: 20%;
    border-radius: 20%;
  }
+
+
+
+ /*jumbotron*/
+.jumbotron#diabetes{
+    background:url('../images/special/diabete_jumbotron.jpg');
+    padding:60px;
+    padding-left:100px;
+    padding-right:100px;
+}
+
+@media (max-width: 767px) {
+    .jumbotron#diabetes{
+      padding:10px;
+      padding-left:20px;
+      padding-right:20px;
+    }
+    .jumbotron p {
+        font-size: 15px;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .jumbotron p {
+        font-size: 20px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .jumbotron p {
+        font-size: 20px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .jumbotron p {
+        font-size: 20px;
+    }
+}
