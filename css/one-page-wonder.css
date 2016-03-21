@@ -420,6 +420,9 @@ footer {
 
 }
 
-.lead-small{
-
+.lead-huge{
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  line-height: 1.4;
 }
